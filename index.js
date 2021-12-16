@@ -29,7 +29,7 @@ const examples = [
     `
   },
   {
-  	title: "REPOISITION",
+  	title: "REPOSITION",
     text: `
 <span 
 	id="block" 

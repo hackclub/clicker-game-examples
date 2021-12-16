@@ -9,19 +9,20 @@ const examples = [
 	id="button" 
 	style="
 		background-color: grey;  
-		border-size: 10px"> 
+		border-size: 10px;"> 
 	Click Me!
 </span>
+
 <script>
-	const button = document.getElementById("button")
+	const button = document.getElementById("button");
 
-	const count = document.getElementById("count")
+	const count = document.getElementById("count");
 
-	let num = 0
+	let num = 0;
 
 	function counter() {
-		num++
-		count.innerText = num
+		num++;
+		count.innerText = num;
 	}
 
 	button.addEventListener("click", counter);
@@ -41,14 +42,15 @@ const examples = [
 		width: 50px; 
 		height: 50px;"> 
 </span>
+
 <script>
-	const block = document.getElementById("block")
+	const block = document.getElementById("block");
 
 	function relocate() {
-		let x = 5 + Math.random() * 90
-		let y = 15 + Math.random() * 45
-		block.style.left = x+"%";
-		block.style.top = y+"%";
+		let x = 5 + Math.random() * 90;
+		let y = 15 + Math.random() * 45;
+		block.style.left = x + "%";
+		block.style.top = y + "%";
 	}
 
 	block.addEventListener("click", relocate);
@@ -68,12 +70,13 @@ const examples = [
 		width: 50px; 
 		height: 50px;"> 
 </span>
+
 <script>
-	const block = document.getElementById("block")
+	const block = document.getElementById("block");
 
 	function resize() {
-		let size = 25 + Math.random() * 100
-		block.style.transform = \`scale(\${size}%, \${size}%\`
+		let size = 25 + Math.random() * 100;
+		block.style.transform = \`scale(\${size}%, \${size}%\`;
 	}
 
 	block.addEventListener("click", resize);
@@ -88,28 +91,29 @@ const examples = [
 	id="button" 
 	style="
 		background-color: grey;  
-		border-size: 10px"> 
+		border-size: 10px;"> 
 	Click Me!
 </span>
+
 <script>
-	const button = document.getElementById("button")
+	const button = document.getElementById("button");
 
-	const timer = document.getElementById("timer")
+	const timer = document.getElementById("timer");
 
-	let time = 2000
+	let time = 2000;
 
 	function timerfunc() {
-		time--
-		timer.innerText = time
+		time--;
+		timer.innerText = time;
 		if(time == 0) {
-			time = 2000
+			time = 2000;
 		}
 	}
 
-	setInterval(timerfunc, 0.1)
+	setInterval(timerfunc, 0.1);
 
 	function reset() {
-		time = 2000
+		time = 2000;
 	}
 
 	button.addEventListener("click", reset);

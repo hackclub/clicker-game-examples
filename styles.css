@@ -1,0 +1,106 @@
+body {
+	margin: 0px;
+	width: 100vw;
+	display: flex;
+	align-items: top;
+	justify-content: center;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+
+.search-box {
+	margin-top: 30px;
+	width: 100%;
+	display: flex;
+	place-content: center;
+}
+
+.text {
+	width: 100%;
+	display: flex;
+	margin-top: 10px;
+	place-content: center;
+}
+
+.search-box input {
+	width: 60%;
+	padding: 10px;
+}
+
+.examples {
+	padding: 20px;
+	display: grid;
+	place-content: center;
+	justify-items: center;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.example {
+	display: grid;
+	grid-template: 
+		"example-title example-title" 30px
+		"example-code example-view" 1fr
+		/ 1fr 300px;
+	justify-items: center;
+	align-items: center;
+	border: 2px solid grey;
+	border-radius: 15px;
+	padding: 20px;
+	margin-bottom: 20px;
+	background: #ffe4c445;
+	width: 90%;
+}
+
+.example-iframe {
+	width: 300px;
+	height: 300px;
+	background: white;
+}
+
+.example-title {
+	grid-area: example-title;
+	width: 100%;
+	font-size: 1.2em;
+}
+
+.example-code {
+	grid-area: example-code;
+	height: 100%;
+	width: 100%;
+	overflow-x: scroll;
+	background: darkgray;
+	padding: 10px;
+	border-radius: 15px;
+	box-sizing: border-box;
+}
+
+.example-view {
+	grid-area: example-view;
+	width: 300px;
+	height: 300px;
+	margin-left: 20px;
+	/*border: solid 1px black;*/
+	border-radius: 15px;
+	box-sizing: border-box;
+}
+
+.example-view canvas {
+	border-radius: 15px;
+}
+
+.draw-trigger {
+	border-radius: 5px;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid grey;
+	/*display: none;*/
+}
+
+.draw-trigger:hover {
+	border-radius: 5px;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid blue;
+	/*display: none;*/
+}
